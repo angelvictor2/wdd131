@@ -33,27 +33,29 @@ body {
 
 
 header {
-    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 1.5rem 2rem;
+    justify-content: center;
     background-color: var(--color-navy);
     color: var(--color-sky-light);
-    min-height: 72px;
+    padding: 1.5rem 0 0;
 }
 
 
 #course-title {
     display: block;
-    font-size: 1.3rem;
+    text-align: center;
+    font-size: 1.4rem;
     font-weight: 700;
+    margin-bottom: 0.8rem;
 }
 
 nav {
     width: 100%;
-    padding: 0.5rem 2rem;
+    padding: 0.2rem 2rem;
     background-color: var(--color-sky-mid);
+
 }
 
 nav ul {
@@ -70,7 +72,6 @@ nav a {
     text-decoration: none;
     font-weight: 600;
     padding: 8px 12px;
-    border-radius: 6px;
     background: rgba(255, 255, 255, 0.05);
     transition: background 0.2s ease;
 }
@@ -93,12 +94,12 @@ main {
 
 main>h1 {
     position: absolute;
-    right: 20rem;
+    right: 18rem;
     top: 4rem;
     transform: translateY(-50%);
     margin: 0;
     font-size: 1rem;
-    color: yellowgreen;
+    color: white;
     z-index: 20;
 }
 
@@ -165,12 +166,12 @@ footer {
 
 footer p {
     margin: 4px 0;
-    color: white;
+    
 }
 
 #lastModified {
     font-size: 0.9rem;
-    color: #ffea7a;
+    color: white;
 }
 
 
