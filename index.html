@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd131</title>
+    <meta name="author" content="Angel Victor">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals first page created by Angel Victor.">
+    <title>WDD 131 - Dynamic Web Fundamentals - Angel Victor</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD131 - Angel Victor</h1>
+    <header>
+        <h1><span id="course-title"> WDD 131 - Dynamic Web Fundamentals </span></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/angel-victor/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/7?lang=spa"
+                    target="_blank">Scripture</a></li>
+            <li><a href="#" target="_blank">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>- Angel Eduardo Victor Escobedo</h1>
+        <section class="card about">
+            <h2>About Me</h2>
+            <img src="images/aboutme.jpg" alt="Portrait of Angel Victor">
+            <p>
+                Hello, my name is Angel Victor. I was born in Guatemala and I am 28 years old.
+                I grew up in a small town where I learned the value of hard work and perseverance.
+                I hold a diploma in Electricity and am currently pursuing studies in Software Development.
+                I enjoy traveling and exploring new places across my country, and I value spending
+                quality time with my family and my child.
+            </p>
+        </section>
+
+        <section class="card resources">
+            <h2>Web Resources</h2>
+            <img src="images/coolors.png" alt="Screenshot collage of web resources">
+            <ul>
+                <li><a href="https://coolors.co/a8e0ff-8ee3f5-70cad1-3e517a" target="_blank">Coolors</a></li>
+                <li><a href="https://codepen.io/pen" target="_blank">Codepen</a></li>
+                <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                <li><a href="https://video.byui.edu/media/t/1_4ihz4bro" target="_blank">BYU video</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Angel Victor Escobedo - Guatemala City</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
