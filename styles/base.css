@@ -121,35 +121,37 @@ main>h1 {
 }
 
 
-.card img {
-    max-width: 90%;
-    height: auto;
-    display: block;
+.about img {
+    width: 150px;
+    float: right;
+    margin: 14px 0 10px 14px;
     border-radius: 6px;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    margin-bottom: 10px;
 }
 
 
-section.card:first-of-type {
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    gap: 14px;
-    align-items: start;
-}
 
-.card p {
+
+.about p {
     font-size: 0.98rem;
     color: #333;
     text-align: left;
+    margin: 15px 15px 0 0;
 }
 
-
-section.card:nth-of-type(2) p {
-    white-space: pre-line;
-    line-height: 1.45;
+.about h3 {
+    margin: 100px 0 15px ;
+    display: flex;
+    justify-content: center;
+    color: var(--color-navy);
+    border-radius: 6px;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-underline-offset: 5px;
 }
+.resources ul {
+    margin: 0 0 0 15px;
 
+}
 
 footer {
     margin-top: 20px;
@@ -168,34 +170,8 @@ footer p {
 
 #lastModified {
     font-size: 0.9rem;
-    color: white;
+    color: yellow;
 }
 
 
-@media (max-width: 900px) {
-    main {
-        grid-template-columns: 1fr;
-    }
 
-    section.card:first-of-type {
-        grid-template-columns: 1fr;
-        
-    }
-
-    nav ul {
-        gap: 10px;
-        justify-content: center;
-        padding: 6px 8px;
-    }
-
-    main>h1 {
-        right: 1.5rem;
-        font-size: 0.95rem;
-    }
-}
-
-
-a.resource-link {
-    color: var(--color-navy);
-    text-decoration: underline;
-}
