@@ -1,0 +1,27 @@
+@media (min-width: 740px) {
+
+   
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 2rem;
+    }
+
+    
+    #menu {
+        display: none;
+    }
+
+    
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    
+    .temples {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
