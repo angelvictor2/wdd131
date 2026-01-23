@@ -6,8 +6,15 @@
 
 
 body {
-    font-family: "Sansita", sans-serif;
-    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.site-title {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
 }
 
 
@@ -16,12 +23,6 @@ header {
     padding: 1rem;
     text-align: center;
 }
-
-header h1 {
-    color: white;
-    margin-bottom: 0.5rem;
-}
-
 
 nav ul {
     list-style: none;
@@ -32,7 +33,7 @@ nav ul {
 
 nav a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
     padding: 0.75rem;
     text-align: center;
     font-weight: 600;
@@ -78,7 +79,7 @@ main {
     padding: 1rem;
 }
 
-main h2 {
+main h1 {
     text-align: center;
     margin-bottom: 1rem;
 }
