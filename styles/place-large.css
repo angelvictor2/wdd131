@@ -21,11 +21,11 @@
     .weather {
         position: absolute;
         top: 2rem;
-        background: rgba(173, 216, 230, 0.3);
+        background: var(--overlay-bg);
         padding: 1rem;
         border-radius: 8px;
         width: 280px;
-        color: white;
+        color: var(--secondary-color);
     }
 
     .data {
