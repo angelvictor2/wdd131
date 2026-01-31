@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Angel Victor">
+    <meta name="description" content="The next page ilustrating Guatemala as the country of origin of Angel Victor.">
+    <title>Country Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="place-title">
+            <h1>Guatemala</h1>
+        </div>
+    </header>
+
+    <main>   
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Hero image description" width="1500" height="750">
+            </picture>
+        </section>
+    
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 108,889 km²</li>
+                <li><strong>Population:</strong> 17 million</li>
+                <li><strong>Capital:</strong> Guatemala City</li>
+                <li><strong>Languages:</strong> Spanish</li>
+                <li><strong>Currency:</strong> Quetzal (GTQ)</li>
+                <li><strong>Time Zone:</strong> GMT-6</li>
+            </ul>
+        </section>
+    
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+            <p>Temperature: <span id="temperature">22</span> °C</p>
+            <p>Wind Speed: <span id="windspeed">10</span> km/h</p>
+            <p>Wind Chill: <span id="windchill"></span></p>
+        </section>   
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Angel Victor Escobedo - Guatemala City</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
