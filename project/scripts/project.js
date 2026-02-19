@@ -7,14 +7,12 @@ if (lastModified) {
 
 const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
-// Utility function to save favorites
+
 function saveFavorites() {
     localStorage.setItem('favorites', JSON.stringify(favorites));
 }
 
-// ================================
-// PRODUCTS LOGIC
-// ================================
+
 
 function addToFavorites(productName) {
     if (!favorites.includes(productName)) {
@@ -26,7 +24,7 @@ function addToFavorites(productName) {
     }
 }
 
-// Attach event listeners to product buttons (safe for all pages)
+
 const productButtons = document.querySelectorAll('[data-product]');
 
 if (productButtons.length > 0) {
@@ -36,10 +34,6 @@ if (productButtons.length > 0) {
         });
     });
 }
-
-// ================================
-// CONTACT FORM LOGIC
-// ================================
 
 function handleFormSubmit(event) {
     event.preventDefault();
@@ -71,16 +65,12 @@ function handleFormSubmit(event) {
     }
 }
 
-// Attach form submit listener (safe check)
+
 const contactForm = document.querySelector('#contactForm');
 
 if (contactForm) {
     contactForm.addEventListener('submit', handleFormSubmit);
 }
-
-// ================================
-// OPTIONAL: DISPLAY FAVORITES COUNT
-// ================================
 
 function displayFavoritesCount() {
     const countElement = document.querySelector('#favoritesCount');
