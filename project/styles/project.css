@@ -65,7 +65,7 @@ a {
     color: var(--primary-color);
 }
 
-/* ===== HERO ===== */
+
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url("../images/hero-shoes.jpg") center / cover no-repeat;
@@ -83,7 +83,7 @@ a {
     margin-bottom: 1.5rem;
 }
 
-/* ===== BUTTONS ===== */
+
 .btn-primary,
 .btn-secondary {
     display: inline-block;
@@ -109,12 +109,12 @@ a {
     color: #fff;
 }
 
-/* ===== MAIN CONTENT ===== */
+
 main {
     padding: 2rem 1rem;
 }
 
-/* ===== PRODUCTS ===== */
+
 .products h2 {
     text-align: center;
     margin-bottom: 0.5rem;
@@ -147,7 +147,7 @@ main {
     margin-bottom: 0.8rem;
 }
 
-/* ===== CONTACT FORM ===== */
+
 .contact {
     max-width: 500px;
     margin: auto;
@@ -176,7 +176,7 @@ textarea {
     font-weight: bold;
 }
 
-/* ===== FOOTER ===== */
+
 .site-footer {
     background-color: #fff;
     text-align: center;
