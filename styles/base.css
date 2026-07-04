@@ -88,16 +88,11 @@ main {
     align-items: start;
 }
 
-
-main>h1 {
-    position: absolute;
-    right: 18rem;
-    top: 4rem;
-    transform: translateY(-50%);
-    margin: 0;
-    font-size: 1rem;
-    color: white;
-    z-index: 20;
+h1 {
+    grid-column: 1 / -1;
+    font-size: 1.8rem;
+    color: var(--color-navy);
+    text-align: center;
 }
 
 .card {
