@@ -10,19 +10,16 @@ button.addEventListener('click', function(){
         const deleteButton = document.createElement('button');
         li.textContent = input.value;
         deleteButton.textContent = "❌";
+        deleteButton.addEventListener("click", function () {
+        list.removeChild(li);
+        input.focus()
+        });
+
         li.append(deleteButton);
         list.append(li);
         input.value = '';
-    }
-    input.focus();
-});
 
-list.addEventListener('click', function (e) {
-    if (e.target.tagName === 'BUTTON') {
-        const li = e.target.parentElement;
-        list.removeChild(li);
-        input.focus();
     }
-});
 
+});
 
