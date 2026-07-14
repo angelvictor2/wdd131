@@ -12,6 +12,11 @@
     #menu {
         display: none;
     }
+    
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
 
     
     .navigation {

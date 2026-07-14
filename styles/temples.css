@@ -9,42 +9,31 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-
+header {
+    background-color: #0f5298;
+    padding: 1rem;
+}
 .site-title {
     color: white;
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
 }
 
-
-header {
-    background-color: rgb(84, 11, 84);
-    padding: 1rem;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-
-}
 
 nav a {
     color: white;
-    text-decoration: underline;
-    padding: 0.75rem;
     text-align: center;
     font-weight: 600;
+    text-decoration: none;
 }
 
 nav a:hover {
-    background-color: #eee;
-    color: #000;
+    color: darkblue;
 }
 
 #menu {
+    display: block;
     background: none;
     border: none;
     font-size: 2rem;
@@ -63,63 +52,62 @@ nav a:hover {
 .navigation {
     display: none;
     flex-direction: column;
+    gap: 0.5rem;
 }
 
 .navigation.open {
     display: flex;
+    
 }
 
-.active {
-    color: yellow;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 main {
-    max-width: 1100px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 1rem;
 }
-
-main h1 {
-    text-align: center;
+h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
+    text-align: center;
+    color: #0f5298;
 }
 
 .temples {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+    padding: 1rem;
 }
-
-
-.temples figure {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #fff;
-    text-align: center;
-}
-
-.temples img {
+img {
     width: 100%;
-    height: 220px;
+    height: 200px;
     object-fit: cover;
-    display: block;
+    object-position: center;
+    border-radius: 8px
 }
 
-.temples figcaption {
-    padding: 0.75rem;
-    font-weight: 600;
-    background-color: #f5f5f5;
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    text-align: center;
+    overflow: hidden;
+
 }
 
 footer {
-    background-color: rgb(84, 11, 84);
+    background-color: #0f5298;
     color: white;
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
-}
-
-footer p {
-    margin: 0.25rem 0;
 }
