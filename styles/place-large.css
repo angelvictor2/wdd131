@@ -1,0 +1,55 @@
+
+@media only screen and (min-width: 768px) {
+
+    main {
+        display: grid;
+    }
+
+    .hero {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .data {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+
+        justify-self: start;
+        align-self: start;
+
+        margin: 7rem;
+        padding: 4rem;
+
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    }
+
+    .weather {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+
+        justify-self: end;
+        align-self: end;
+
+        margin: 5rem;
+        padding: 4rem;
+
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+        margin-left: .5rem;
+    }
+}
