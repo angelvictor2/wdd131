@@ -1,93 +1,73 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+   
 }
 
 :root {
-    --primary-color: #4997d0;
-    --secondary-color: #ffffff;
-    --accent-color: #2c2c2c;
-    --background-color: #f4f4f4;
-    --card-background: #ffffff;
-    --overlay-bg: rgba(173, 216, 230, 0.3);
-}
-
-
-body {
-    font-family: "Roboto", sans-serif;
-    background-color: var(--background-color);
-    color: var(--accent-color);
-    line-height: 1.6;
+    --primary-color: #fdf8f5;
+    --secondary-color: #eef3f2;
+    --text-primary: #2F3E46;
+    --accent-color: #E07A5F;
+    --font-titles: 'Lora', Georgia, serif;
+    --font-body: 'Plus Jakarta Sans', Arial, sans-serif;
 }
 
 header {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    padding: 20px;
     text-align: center;
-    padding: 1rem;
 }
 
-header h1 {
-    font-size: 2rem;
+.place-title {
+    font-size: 1rem;
+    color: var(--text-primary);
+    font-family: var(--font-titles);
+}
+h2 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    font-family: var(--font-titles);
+    margin-bottom: 10px;
+    
 }
 
-
-main {
-    max-width: 900px;
-    margin: 0 auto;
+.hero {
+    background-color: var(--secondary-color);
+    text-align: center;
 }
-
-
 .hero img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    display: block;
+    border-radius: 10px;
 }
-
-
-section {
-    background-color: var(--card-background);
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 4px;
-}
-
-section h2 {
-    margin-bottom: 0.75rem;
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 0.25rem;
-}
-
-
-.data ul {
-    list-style: none;
-}
-
-.data li {
-    padding: 0.3rem 0;
-}
-
-
-.weather, .data {
-    text-align: center;
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: var(--secondary-color);
+    align-items: center;
+    font-family: var(--font-body);
+    border-bottom: 1px solid var(--accent-color);
+    padding: 10px;
 }
 
 .weather-icon {
-    width: 60px;
-    height: auto;
-    margin: 0.5rem 0;
+    width: 50px;
+    height: 50px;
 }
-
+.weather {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    font-family: var(--font-body);
+}
 
 footer {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    padding: 20px;
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    font-family: var(--font-titles);
+    color: var(--text-primary);
 }
 
-footer p {
-    font-size: 0.9rem;
-}
