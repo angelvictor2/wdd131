@@ -3,7 +3,7 @@ const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").textContent = currentYear;
 document.getElementById("lastModified").textContent = document.lastModified;
 
-const temperature = 22;
+const temperature = 20;
 const windSpeed = 10;  
 
 const windChillElement = document.querySelector("#windchill");
