@@ -12,7 +12,7 @@
 
     .hero img {
         width: 100%;
-        height: auto;
+        height: 80vh;
         display: block;
     }
 
@@ -23,8 +23,8 @@
         justify-self: start;
         align-self: start;
 
-        margin: 7rem;
-        padding: 4rem;
+        margin: 2rem;
+        padding: 2rem;
 
         background-color: rgba(255, 255, 255, 0.9);
         box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
@@ -37,8 +37,8 @@
         justify-self: end;
         align-self: end;
 
-        margin: 5rem;
-        padding: 4rem;
+        margin: 6rem;
+        padding: 2rem;
 
         background-color: rgba(255, 255, 255, 0.9);
         box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
