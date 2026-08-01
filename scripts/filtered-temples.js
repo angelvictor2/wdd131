@@ -1,6 +1,6 @@
 const currentYear = new Date().getFullYear();
-document.getElementById("currentyear").textContent = currentYear;
-document.getElementById("lastModified").textContent = document.lastModified;
+document.querySelector("#currentyear").textContent = currentYear;
+document.querySelector("#lastModified").textContent = document.lastModified;
 
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
