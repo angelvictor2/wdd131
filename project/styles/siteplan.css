@@ -18,36 +18,34 @@ body {
     line-height: 1.6;
 }
 
-.site-header {
+
+.site-logo {
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: var(--background-color);
-    color: white;
+    justify-content: center;
+    padding: none;
 }
 
 .logo {
-    width: 70px;
+    width: 300px;
     height: auto;
+
 }
 
 
-h1,
 h2,
 h3 {
     font-family: 'Playfair Display', serif;
     color: var(--primary-color);
     margin-top: 0;
+    text-align: center;
 }
-
 
 main {
     padding: 1.5rem;
 }
 
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -66,5 +64,6 @@ pre {
     border-left: 4px solid var(--accent-color);
     overflow-x: auto;
     font-family: monospace;
+    
 }
 
