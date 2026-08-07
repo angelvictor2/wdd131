@@ -1,90 +1,77 @@
 :root {
-    --primary-color: #1f3a5f;
-    --accent-color: #f39c12;
-    --background-color: #f5f7fa;
-    --border-color: #ccc;
-    --text-color: #333;
+    --primary-color: #1d4ed8;
+    --text-color: #172033;
+    --background-color: #eff6ff;
 }
 
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
+* {
+    box-sizing: border-box;
     margin: 0;
-}
-
-main {
-    max-width: 100%;
-    padding: 1rem;
-}
-
-
-form {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    padding: 0;
 }
 
 h1 {
+    color: var(--background-color);
     text-align: center;
-    color: var(--primary-color);
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
-
-label,
-legend {
-    font-weight: bold;
+header {
+    background-color: var(--primary-color);
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-input,
-select,
-textarea {
-    font-size: 1rem;
-    padding: 0.5rem;
-    border-radius: 4px;
-    border: 1px solid var(--border-color);
-    width: 100%;
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
 
 fieldset {
-    border: 1px solid var(--border-color);
-    padding: 1rem;
+    border: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
 }
 
-fieldset label {
-    font-weight: normal;
-    margin-right: 1rem;
+label {
+    display: block;
+    color: var(--text-color);
+
+}
+
+legend {
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    font-size: 1rem;
 }
 
 
 input[type="submit"] {
-    background-color: var(--accent-color);
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--background-color);
     border: none;
-    padding: 0.75rem;
-    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-size: 1.5rem;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 4px;
+    width: 100%;
 }
 
-input[type="submit"]:hover {
-    background-color: #d68910;
-}
-
-
-footer {
+.rating {
+    display: inline-block;
     text-align: center;
-    padding: 1rem;
-    font-size: 0.85rem;
-    color: #666;
+    margin-right: 1rem;
 }
