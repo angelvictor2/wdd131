@@ -1,0 +1,58 @@
+:root {
+    --primary-color: #1e3a8a;
+    --text-color: #172033;
+    --background-color: #eff6ff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-family: "PT Serif", serif;
+}
+
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+main p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+#reviewCount {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
