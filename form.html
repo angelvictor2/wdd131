@@ -28,7 +28,7 @@
         <form method="get" action="review.html">
             <fieldset>
                 <legend>Product Name</legend>
-                <label for="product"></label>
+                <label for="product" class="visually-hidden">Product Name</label>
                 <select id="product" name="product" required>
                     <option value="" disabled selected>-- Select a Product --</option>
                 </select>
@@ -48,12 +48,12 @@
                 <input type="radio" id="rating4" name="rating" value="4" required>
                 <label class="rating" for="rating4">☆☆☆☆</label>
                 
-                <input type="radio" id="rating5" name="rating" value="5">
+                <input type="radio" id="rating5" name="rating" value="5" required>
                 <label class="rating" for="rating5">☆☆☆☆☆</label>
             </fieldset>
             <fieldset>
                 <legend>Date Of installation</legend>
-                <label for="installationDate"></label>
+                <label for="installationDate" class="visually-hidden">Installation Date</label>
                 <input type="date" id="installationDate" name="installationDate" required>
             </fieldset>
             <fieldset>
@@ -65,12 +65,12 @@
             </fieldset>
             <fieldset>
                 <legend>Written Review (optional)</legend>
-                <label for="review"></label>
+                <label for="review" class="visually-hidden">Written Review</label>
                 <textarea name="review" id="review" rows="4" cols="50"></textarea>
             </fieldset>
             <fieldset>
                 <legend>Your Name (optional)</legend>
-                <label for="userName"></label>
+                <label for="userName" class="visually-hidden">Your Name</label>
                 <input type="text" name="userName" id="userName">
             </fieldset>
             <fieldset>

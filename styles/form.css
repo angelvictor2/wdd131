@@ -1,7 +1,13 @@
 :root {
-    --primary-color: #1d4ed8;
+    --primary-color: #1e3a8a;
     --text-color: #172033;
     --background-color: #eff6ff;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 * {
@@ -15,6 +21,7 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
     padding: 10px;
+    font-family: "PT Serif", serif;
 }
 
 header {
@@ -48,6 +55,8 @@ legend {
     font-weight: bold;
     color: var(--text-color);
     margin-bottom: 0.5rem;
+    font-family: "PT Serif", serif;
+    font-size: 1.2rem;
 }
 
 select,
@@ -81,4 +90,16 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
