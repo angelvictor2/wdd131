@@ -7,7 +7,6 @@ if (lastModified) {
 
 const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
-
 function saveFavorites() {
     localStorage.setItem('favorites', JSON.stringify(favorites));
 }
@@ -37,7 +36,6 @@ if (productButtons.length > 0) {
 
 function handleFormSubmit(event) {
     event.preventDefault();
-
     const nameInput = document.querySelector('#name');
     const emailInput = document.querySelector('#email');
     const messageInput = document.querySelector('#message');
